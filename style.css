@@ -74,10 +74,19 @@ img {
 
 /* inizio parte aggiunta per l'esercizio */
 @media screen and (max-width: 420px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .row {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
   /* BLOCCO LEZIONI */
   #lezioni .row {
     background-color: lightgoldenrodyellow;
-    width: 100vw;
   }
   #lezioni .row>.left,
   #lezioni .row>.right {
@@ -87,7 +96,6 @@ img {
   /* BLOCCO STEPS */
   #steps .row {
     background-color: white;
-    width: 100vw;
   }
   #steps .row>.left,
   #steps .row>.central,
@@ -98,6 +106,14 @@ img {
   /* BLOCCO PERCHE */
   #why .row {
     background-color: lightgoldenrodyellow;
-    width: 100vw;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+  }
+  /* COMMON */
+  .row > *:not(h1) {
+    margin-top: 20px;
   }
 }

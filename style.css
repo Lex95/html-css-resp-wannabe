@@ -74,6 +74,7 @@ img {
 
 /* inizio parte aggiunta per l'esercizio */
 @media screen and (max-width: 420px) {
+  /* BLOCCO LEZIONI */
   #lezioni .row {
     background-color: lightgoldenrodyellow;
     width: 100vw;
@@ -83,5 +84,20 @@ img {
     width: 100%;
     float: none;
   }
-  
+  /* BLOCCO STEPS */
+  #steps .row {
+    background-color: white;
+    width: 100vw;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+  /* BLOCCO PERCHE */
+  #why .row {
+    background-color: lightgoldenrodyellow;
+    width: 100vw;
+  }
 }

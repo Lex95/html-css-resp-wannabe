@@ -81,6 +81,7 @@ img {
   }
   .row {
     width: 100%;
+    /* andava bene anche auto o 100vw poichè in mobile non ci sono scrollbar */
     margin: 0;
     padding: 10px;
   }
@@ -116,6 +117,7 @@ img {
   .row > *:not(h1) {
     margin-top: 20px;
   }
+  /* si potevano anche ridimensionare le immagini */
 }
 /* bonus */
 @media screen and (min-width: 421px) and (max-width: 768px) {
@@ -149,6 +151,7 @@ img {
   }
   #steps .row>.right {
     width: 100%;
+    /* andrebbe cambiataa cnhe l'altezza per far sì che non si stretchi */
   }
   /* BLOCCO PERCHE */
   #why .row {
